@@ -15,6 +15,8 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 RUN docker-php-ext-install bcmath gd intl pdo_mysql sockets soap xsl zip
 
+RUN docker-php-ext-install opcache
+
 #
 #RUN docker-php-ext-install pdo pdo_mysql
 #
